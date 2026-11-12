@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="box1">
+            <img src="./assets/International_Pokémon_logo.svg.webp" alt="Logo">
+        </div>
+        <div class="box2">
+            <i class="ri-menu-line"></i>
+        </div>
+        <div class="theme">
+            <i class="ri-sun-line"></i>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="search">
+            <i class="ri-search-line"></i>
+            <p>Search for a pokemon</p>
+        </div>
+        <div class="filter">
+            <p>Filter by types (1)</p>
+            <i class="ri-arrow-drop-down-line"></i>
+        </div>
+        <div class="sort">
+            <i class="ri-sort-desc"></i>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card" id="ghost">
+            <div class="type">
+                <p>#7890</p>
+                <i class="ri-poker-hearts-line"></i>
+            </div>
+            <img src="./assets/haunter-card.png" alt="Haunter">
+            <div class="name-pokemon"><p>Haunter</p></div>
+            <div class="poke-type"> 
+                <img src="./assets/ghost.png" alt="Ghost">
+            </div>
+            <div class="widge">
+                <i class="ri-arrow-right-line"></i>
+            </div>
+        </div>
+
+        <div class="card" id="normal">
+            <div class="type">
+                <p>#5783</p>
+                <i class="ri-poker-hearts-line"></i>
+            </div>
+            <img src="./assets/tandemaus-card.png" alt="Tandemaus">
+            <div class="name-pokemon"><p>Tandemaus</p></div>
+            <div class="poke-type"> 
+                <img src="./assets/normal.png" alt="Normal">
+            </div>
+            <div class="widge">
+                <i class="ri-arrow-right-line"></i>
+            </div>
+        </div>
+
+        <div class="card" id="grass">
+            <div class="type">
+                <p>#1947</p>
+                <i class="ri-poker-hearts-line"></i>
+            </div>
+            <img src="./assets/rowlet-card.png" alt="Rowlet">
+            <div class="name-pokemon"><p>Rowlet</p></div>
+            <div class="poke-type"> 
+                <img src="./assets/grass.png" alt="Grass">
+            </div>
+            <div class="widge">
+                <i class="ri-arrow-right-line"></i>
+            </div>
+        </div>
+
+        <div class="card" id="water">
+            <div class="type">
+                <p>#4512</p>
+                <i class="ri-poker-hearts-line"></i>
+            </div>
+            <img src="./assets/wartortle-card.png" alt="Wartortle">
+            <div class="name-pokemon"><p>Wartortle</p></div>
+            <div class="poke-type"> 
+                <img src="./assets/water.png" alt="Water">
+            </div>
+            <div class="widge">
+                <i class="ri-arrow-right-line"></i>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="box">
+            <div class="small-box">
+                <img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/entertainment/pokeball-f5iyeka6x4kf42aaejxfrs.png/pokeball-qkdk3ykdwbrewx1z5td8i.png?_a=DATAiZAAZAA0" alt="">
+                <div class="text-l">
+                    <p id="head">Explore</p>
+                    <p>Discover all your favorite pokemon</p>
+                </div>
+            </div>
+
+            <div class="small-box">
+                <img id="leaf" src="./assets/leaf.png" alt="">
+                <div class="text-l">
+                    <p id="head">Filter</p>
+                    <p>Find pokemon by types and abilities</p>
+                </div>
+            </div>
+
+            <div class="small-box">
+                <img src="./assets/star.png" alt="">
+                <div class="text-l">
+                    <p id="head">Collection</p>
+                    <p>Save and manage your collection</p>
+                </div>
+            </div>
+
+            <div class="small-box">
+                <img src="./assets/stat.png" alt="">
+                <div class="text-l">
+                    <p id="head">Stats</p>
+                    <p>View stats and learn about pokemon</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="box1">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d65b6ec3-850d-49e2-b2d0-0938468e0637/deigjme-971b4ce3-f0f4-4d69-a4f6-f1900fcc0185.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9kNjViNmVjMy04NTBkLTQ5ZTItYjJkMC0wOTM4NDY4ZTA2MzcvZGVpZ2ptZS05NzFiNGNlMy1mMGY0LTRkNjktYTRmNi1mMTkwMGZjYzAxODUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-4BkZhvil0gu3t3LUyDJ_kPLZeqp2FnuDHo0bRlD88I" alt="">
+            </div>
+            <div class="box2">
+                <p>© 2024 Pokemon, All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
