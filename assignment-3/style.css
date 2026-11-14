@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+nav {
+    height: 10%;
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100%;
+    width: 20%;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.logo img {
+    width: 100px;
+}
+
+menu {
+    width: 50%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+search {
+    width: 30%;
+    height: 100%;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 60%;
+    height: 65%;
+    background-color: beige;
+    border-radius: 30px;
+    border: 2px solid darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.search-bar .ri-search-line{
+    color: #f7b529;
+}
+.search-bar p{
+    font-size: 12px;
+    color: lightslategray;
+}
+
+menu p{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 65%;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title {
+    width: 48%;
+    height: 92%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.deal {
+    height: 10%;
+    width: 30%;
+    background-color: white;
+    margin: 2% 0 2% 2%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid darkgreen;
+}
+
+.deal p{
+    color: darkgreen;
+    font-size: 12px;
+}
+
+h1 {
+    height: 44%;
+    width: 100%;
+    background-color: beige;
+    font-size: 65px;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 0 3%;
+    line-height: 1.05;
+    align-content: center;
+}
+sub {
+    display: flex;
+    align-items: center;
+    height: 12%;
+    width: 100%;
+    background-color: beige;
+}
+
+sub p {
+    padding: 0 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+}
+
+.cart {
+    width: 100%;
+    height: 16%;
+    background-color:beige;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 150px;
+    padding: 0 3%;
+}
+
+.basket {
+    width: 30%;
+    height: 75%;
+    background-color:black;
+    border-radius: 40px;
+    padding: 1.5%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.basket p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.basket .icon {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ri-shopping-basket-fill{
+    font-size: 20px;
+}
+
+.quant {
+    width: 25%;
+    height: 75%;
+    background-color: #fbf9f5;
+    border-radius: 50px;
+    border: 1px solid #ece6dc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quant button,
+.quant .num {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.quant button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+.quant .minus {
+    color: #333;
+}
+
+.quant .num {
+    color: #c93b3b; 
+    border-left: 1px solid #e2ddd5; 
+    border-right: 1px solid #e2ddd5; 
+    line-height: 1.2; 
+}
+
+.quant .plus {
+    color: #2e6f32; 
+}
+
+.goodies {
+    width: 100%;
+    height: 14%;
+    background-color:beige;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.goodies .natural{
+    height: 100%;
+    width: 30%;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.goodies .leaf{
+    height: 50%;
+    aspect-ratio: 1 / 1;
+    background-color:rgb(255, 255, 255);
+    border-radius: 50px;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ri-leaf-fill{
+    color:darkgreen;
+    
+}
+.goodies p{
+    font-size: 12px;
+}
+
+.goodies .oven-grill{
+    height: 100%;
+    width: 30%;
+    background-color:beige;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.goodies .fire{
+    height: 50%;
+    aspect-ratio: 1 / 1;
+    background-color:rgb(255, 255, 255);
+    border-radius: 50px;
+    border: 1px solid crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ri-fire-fill{
+    color: darkorange;
+}
+
+.goodies .tasty{
+    height: 100%;
+    width: 30%;
+    background-color:beige;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.goodies .heart{
+    height: 50%;
+    aspect-ratio: 1 / 1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    border: 1px solid crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ri-poker-hearts-fill{
+    color: crimson;
+}
+
+
+
+
+.poster {
+    width: 48%;
+    height: 92%;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.poster .cir{
+    position: relative;
+    bottom: 10px;
+    left: 0px;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(237, 192, 69);
+    border-radius: 500px;
+    right: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poster .cir img{
+
+    position: absolute;
+    padding: 2%;
+    width: 105%;
+    rotate: -10deg;
+}
+
+.poster .details {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    padding: 0 20px;
+}
+
+.poster .feature {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+.poster .feature:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 29px; 
+    top: 64px;
+    height: 30px;
+    border-left: 2px dotted #d8cdb8;
+}
+
+.poster .circle {
+    height: 60px;
+    width: 60px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: white;
+}
+
+.poster .circle.chili {
+    background-color: #145a32;
+}
+
+.poster .circle.beef {
+    background-color: #d62828; 
+}
+
+.poster .circle.smokey {
+    background-color: #f7b529;
+}
+
+.poster .feature h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.poster .feature p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #666;
+}
+
+
+footer{
+    height: 25%;
+    width: 100%;
+    background-color:beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer section{
+    height:92%;
+    width: 90%;
+    background: #165934;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30px;
+}
+
+footer section .flav{
+    width: 20%;
+    height: 90%;
+    background-color: cornflowerblue;
+}
+
+footer section .chip1{
+    width: 20%;
+    height: 70%;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order p{
+    color: white;
+}
+
+footer section .chip1 img{
+    width: 120px;
+    height: 109px;
+}
+
+footer section .chip1 p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 12px;
+}
+
+footer section .chip1 .order{
+    height: 20px;
+    width: 90px;
+    border-radius: 10px;
+    background-color: crimson;
+}
+
+footer section .chip2{
+    width: 20%;
+    height: 70%;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+footer section .chip2 img{
+    width: 120px;
+    height: 109px;
+}
+
+footer section .chip2 p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 12px;
+}
+
+footer section .chip2 .order{
+    height: 20px;
+    width: 90px;
+    border-radius: 10px;
+    background-color: crimson;
+}
+
+footer section .chip3{
+    width: 20%;
+    height: 70%;
+    background-color:beige;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+
+footer section .chip3 img{
+    width: 120px;
+    height: 109px;
+}
+
+footer section .chip3 p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 12px;
+}
+
+footer section .chip3 .order{
+    height: 20px;
+    width: 90px;
+    border-radius: 10px;
+    background-color: crimson;
+}
+
+footer section .flav {
+    width: 20%;
+    height: 100%;
+    background-color: #165934;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+footer section .flav h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    line-height: 1.05;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+footer section .flav .divider {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+
+footer section .flav .divider span {
+    width: 14px;
+    height: 2.5px;
+    background-color: #d4b942;
+    border-radius: 2px;
+}
+
+footer section .flav .divider .dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+
+
+footer section .flav .nav-arrows {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+footer section .flav .nav-arrows button {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer section .flav .prev {
+    background-color: #dcd8cd;
+    color: #555;
+}
+
+footer section .flav .next {
+    background-color: #fbf9f5;
+    color: #165934;
+}
+
